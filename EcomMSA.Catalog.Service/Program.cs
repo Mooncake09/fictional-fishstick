@@ -32,6 +32,12 @@ if (app.Environment.IsDevelopment())
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Catalog API V1");
     });
+
+    using (var scope = app.Services.CreateScope())
+    {
+        var dbContext = scope.ServiceProvider.GetRequiredService<ProductsCatalogDbContext>();
+        dbContext.Database.EnsureCreated(); // создаёт БД и таблицы
+    }
 }
 
 app.MapControllers();

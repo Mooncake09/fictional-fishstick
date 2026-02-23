@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/EcomMSA.Catalog.Service/Properties/launchSettings.json
+/EcomMSA.Catalog.Service/Data/catalog.db
+/EcomMSA.Catalog.Service/Data/SQLite/catalog.db
+/EcomMSA.Catalog.Service/Data/SQLite/catalog.db-shm
+/EcomMSA.Catalog.Service/Data/SQLite/catalog.db-wal
+/EcomMSA.Catalog.Service/Data/catalog.db
+/docker-compose.yml
